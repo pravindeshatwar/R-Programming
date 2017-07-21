@@ -1,1 +1,27 @@
+#Text in R is represented as a string object, which looks like a phrase surrounded by quotation marks in the R console.You can combine several strings using the paste() function
 paste("Square", "Circle", "Triangle")
+
+# You can insert a different string between each word by specifying thesep argument
+paste("Square", "Circle", "Triangle", sep = "+")
+
+# A shortcut for all combining string by using paste0() function
+paste0("Square", "Circle", "Triangle")
+
+# You can also provide vector to string as an argument to paste()
+city <- c("mumbai", "pune", "delhi")
+paste("i am living at ",city)
+
+two_cities <- c("best", "worst")
+paste("It was the", two_cities, "of times.")
+
+#You can also collapse all of the elements of a vector of strings into a single string by specifying the collapse argument
+city <- c("mumbai", "pune", "delhi")
+paste(city, collapse=" ")
+
+#nchar() function counts the number of character in string.
+nchar("vtfyiiuhiin")
+
+#The toupper() & tolower() function makes to string uppercase and lowercase resp.
+name<-c("raj","RAhul", "RAJESH")
+toupper(name)
+tolower(name)
